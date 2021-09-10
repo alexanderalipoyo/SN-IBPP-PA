@@ -1,1 +1,19 @@
-node_modules
+# Dependency directories
+node_modules/
+
+# Logs
+debug.log
+
+# Config folder
+
+# Download folder
+cypress/downloads/
+
+# Fixture folder
+cypress/fixtures/example.json
+cypress/fixtures/credentials.json
+
+# Screenshots and Videos
+cypress/**/*.mp4
+cypress/**/*.png
+cypress/**/*.jpg

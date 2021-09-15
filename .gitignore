@@ -8,6 +8,7 @@ debug.log
 
 # Download folder
 cypress/downloads/
+cypress/videos/
 
 # Fixture folder
 cypress/fixtures/example.json

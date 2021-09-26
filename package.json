@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "cy:run": "cypress run"
+        "cy:run": "node_modules/.bin/cypress open",
+        "cy:run_browsers": "cypress run --browser firefox & cypress run --browser edge & cypress run --browser chrome",
+        "cy:run_record_with_dasboard":"cypress run --record --key af646ffd-7ad7-4df9-9a4a-449d4b00d70a"
     },
     "author": "Alex",
     "license": "ISC",

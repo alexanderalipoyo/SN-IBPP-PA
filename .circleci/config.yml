@@ -1,38 +1,17 @@
 # This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
-version: 2
-
+version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
-jobs:
-  cypress/run:
-    parallelism: 4
-    steps:
-    - checkout
-    - restore_cache:
-        keys:
-        - cache-{{ .Branch }}-{{ checksum "package.json" }}
-    - run:
-        name: Npm CI
-        command: npm ci
-    - run:
-        command: npx cypress verify
-    - save_cache:
-        key: cache-{{ .Branch }}-{{ checksum "package.json" }}
-        paths:
-        - ~/.npm
-        - ~/.cache
-    - persist_to_workspace:
-        root: ~/
-        paths:
-        - project
-        - .cache/Cypress
-    - attach_workspace:
-        at: ~/
-    - run:
-        name: Run Cypress tests
-        command: 'npx cypress run'
 workflows:
   build:
     jobs:
-    - cypress/run
-  version: 2
+      - cypress/install:
+          build: 'npm run build' # run a custom app build step
+      - cypress/run:
+          requires:
+            - cypress/install
+          record: true # record results on Cypress Dashboard
+          parallel: true # split all specs across machines
+          parallelism: 4 # use 4 CircleCI machines to finish quickly
+          group: 'all tests' # name this group "all tests" on the dashboard
+          start: 'npm start' # start server before running tests

@@ -6,13 +6,11 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/install:
-          build: 'npm run build'
       - cypress/run:
           name: E2E tests
           requires:
             - cypress/install
-          record : true
+          record: true
           parallel: true
           parallelism: 4
           group: 'all tests'

@@ -6,6 +6,7 @@ orbs:
 workflows:
   build:
     jobs:
+      - cypress/install:
       - cypress/run:
           name: E2E tests
           requires:

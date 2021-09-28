@@ -22,6 +22,7 @@ workflows:
           executor: with-chrome
           browser: chrome
           group: chrome
+          record: true
       - cypress/run:
           name: Firefox
           verify-command: yarn cypress verify
@@ -29,6 +30,7 @@ workflows:
           executor: with-firefox
           browser: firefox
           group: firefox
+          record: true
       - cypress/run:
           name: Edge
           verify-command: yarn cypress verify
@@ -36,5 +38,6 @@ workflows:
           executor: with-edge
           browser: edge
           group: edge
+          record: true
 
 

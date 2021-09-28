@@ -35,9 +35,6 @@ linux-workflow: &linux-workflow
         executor: with-chrome-and-firefox
         post-steps:
           - run:
-              name: Check Types
-              command: yarn types
-          - run:
               name: Run Unit Tests
               command: yarn test:unit:ci
 
@@ -156,9 +153,6 @@ windows-workflow: &windows-workflow
           - run:
               name: Cypress info
               command: yarn cypress info
-          - run:
-              name: Check Types
-              command: yarn types
           - run:
               name: Run Unit Tests
               command: yarn test:unit:ci

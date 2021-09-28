@@ -1,41 +1,43 @@
 {
-    "name": "cypressautomation",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "cy:run": "node_modules/.bin/cypress open",
-        "cy:run_browsers": "cypress run --browser firefox & cypress run --browser edge & cypress run --browser chrome",
-        "cy:run_record_with_dasboard":"cypress run --record --key af646ffd-7ad7-4df9-9a4a-449d4b00d70a",
-        "prebuild": "yarn types"
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "node_modules/.bin/cypress open",
+    "cy:run_browsers": "cypress run --browser firefox & cypress run --browser edge & cypress run --browser chrome",
+    "cy:run_record_with_dasboard": "cypress run --record --key af646ffd-7ad7-4df9-9a4a-449d4b00d70a",
+    "prebuild": "yarn types",
+    "postinstall": "husky install"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.3.1"
+  },
+  "dependencies": {
+    "husky": "^7.0.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "cypress/globals": true
     },
-    "author": "Alex",
-    "license": "ISC",
-    "devDependencies": {
-        "cypress": "^8.3.1"
-    },
-    "dependencies": {
-    },
-    "eslintConfig": {
-        "env": {
-          "cypress/globals": true
-        },
-        "extends": [
-          "react-app",
-          "plugin:prettier/recommended",
-          "plugin:cypress/recommended"
-        ],
-        "plugins": [
-          "cypress",
-          "prettier"
-        ],
-        "rules": {
-          "no-unused-expressions": 0
-        }
-      },
-      "husky": {
-        "hooks": {
-          "pre-push": "yarn types"
-        }
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended",
+      "plugin:cypress/recommended"
+    ],
+    "plugins": [
+      "cypress",
+      "prettier"
+    ],
+    "rules": {
+      "no-unused-expressions": 0
     }
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn types"
+    }
+  }
 }

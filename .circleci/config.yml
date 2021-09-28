@@ -16,7 +16,7 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          config: 'record_key'
+          config: 'af646ffd-7ad7-4df9-9a4a-449d4b00d70a'
           name: Chrome
           verify-command: yarn cypress verify
           store_artifacts: true
@@ -25,7 +25,7 @@ workflows:
           group: chrome
           record: true
       - cypress/run:
-          config: 'record_key'
+          config: 'af646ffd-7ad7-4df9-9a4a-449d4b00d70a'
           name: Firefox
           verify-command: yarn cypress verify
           store_artifacts: true
@@ -34,7 +34,7 @@ workflows:
           group: firefox
           record: true
       - cypress/run:
-          config: 'record_key'
+          config: 'af646ffd-7ad7-4df9-9a4a-449d4b00d70a'
           name: Edge
           verify-command: yarn cypress verify
           store_artifacts: true

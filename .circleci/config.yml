@@ -7,7 +7,7 @@ executors:
       - image: 'cypress/browsers:node14.16.0-chrome90-ff88'
   with-firefox:
     docker:
-      - image: 'cypress/browsers:node12.13.0-chrome78-ff70'
+      - image: 'cypress/browsers:node14.16.0-chrome89-ff86'
 
 workflows:
   build:

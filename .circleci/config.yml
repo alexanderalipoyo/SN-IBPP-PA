@@ -16,25 +16,31 @@ workflows:
   build:
     jobs:
       - cypress/run:
+          env: 'record_key=af646ffd-7ad7-4df9-9a4a-449d4b00d70a'
           name: Chrome
           verify-command: yarn cypress verify
           store_artifacts: true
           executor: with-chrome
           browser: chrome
           group: chrome
+          record: true
       - cypress/run:
+          env: 'record_key=af646ffd-7ad7-4df9-9a4a-449d4b00d70a'
           name: Firefox
           verify-command: yarn cypress verify
           store_artifacts: true
           executor: with-firefox
           browser: firefox
           group: firefox
+          record: true
       - cypress/run:
+          env: 'record_key=af646ffd-7ad7-4df9-9a4a-449d4b00d70a'
           name: Edge
           verify-command: yarn cypress verify
           store_artifacts: true
           executor: with-edge
           browser: edge
           group: edge
+          record: true
 
 

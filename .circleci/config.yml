@@ -10,7 +10,18 @@ workflows:
   build:
     jobs:
       - cypress/run:
+          name: Chrome
           verify-command: yarn cypress verify
           store_artifacts: true
           executor: with-chrome
           browser: chrome
+          group: chrome
+      - cypress/run:
+          name: Firefox
+          verify-command: yarn cypress verify
+          store_artifacts: true
+          executor: cypress/browsers-chrome73-ff68
+          browser: firefox
+          group: firefox
+
+

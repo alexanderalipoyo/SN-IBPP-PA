@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run": "node_modules/.bin/cypress open",
-    "cy:run_browsers": "cypress run --browser firefox & cypress run --browser edge & cypress run --browser chrome",
+    "cy:run_local": "node_modules/.bin/cypress open",
+    "cy:run_browsers_headless": "cypress run --browser firefox & cypress run --browser edge & cypress run --browser chrome",
     "cy:run_record_with_dasboard": "cypress run --record --key af646ffd-7ad7-4df9-9a4a-449d4b00d70a",
-    "prebuild": "yarn types",
-    "postinstall": "husky install",
-    "types": "tsc --noEmit"
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox"
   },
   "author": "Alex",
   "license": "ISC",

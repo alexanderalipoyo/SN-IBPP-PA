@@ -4,7 +4,6 @@ orbs:
   win: circleci/windows@2.4.1
   macos: circleci/macos@1.2.0
 executors:
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ browsers for Linux ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
   with-chrome:
     docker:
       - image: 'cypress/browsers:node14.16.0-chrome90-ff88'
@@ -16,7 +15,7 @@ executors:
       - image: 'cypress/browsers:node14.10.1-edge88'
       
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Workflows ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
-linux-workflow: &linux-workflow
+linux/windows-workflow: &linux/windows-workflow
     jobs:
       - cypress/run:
           name: Chrome
@@ -42,9 +41,7 @@ linux-workflow: &linux-workflow
           browser: edge
           group: edge
           record: true
-
-windows-workflow: &windows-workflow
-    jobs:
+ # windows-workflow         
       - cypress/run:
           name: "Electron - Windows"
           executor: 
@@ -59,6 +56,4 @@ windows-workflow: &windows-workflow
           
 workflows:
   linux:
-    <<: *linux-workflow
-  windows:
-    <<: *windows-workflow
+    <<: *linux/windows-workflow

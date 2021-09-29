@@ -55,5 +55,5 @@ linux/windows-workflow: &linux/windows-workflow
           record: true
           
 workflows:
-  linux:
+  build:
     <<: *linux/windows-workflow

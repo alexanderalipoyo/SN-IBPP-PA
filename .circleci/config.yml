@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1.29.0
+  macos: circleci/macos@1.2.0
 executors:
   with-chrome:
     docker:
@@ -11,9 +12,9 @@ executors:
   with-edge:
     docker:
       - image: 'cypress/browsers:node14.10.1-edge88'
-
-workflows:
-  build:
+      
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Workflows ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+linux-workflow: &linux-workflow
     jobs:
       - cypress/run:
           name: Chrome
@@ -40,4 +41,6 @@ workflows:
           group: edge
           record: true
 
-
+workflows:
+  linux:
+    <<: *linux-workflow

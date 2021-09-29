@@ -53,7 +53,7 @@ windows-workflow: &windows-workflow
             shell: bash.exe
           verify-command: yarn cypress verify
           store_artifacts: true
-          browser: Electron
+          browser: electron
           group: Electron - Windows
           record: true
           

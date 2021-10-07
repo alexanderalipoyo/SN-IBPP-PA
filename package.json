@@ -6,17 +6,43 @@
   "scripts": {
     "cy:run_local": "node_modules/.bin/cypress open",
     "cy:run_browsers_headless": "cypress run --browser firefox & cypress run --browser edge & cypress run --browser chrome",
-    "cy:run_record_with_dasboard": "cypress run --record --key af646ffd-7ad7-4df9-9a4a-449d4b00d70a",
+    "cy:run_record_with_dasboard-old-for-dev": "cypress run --record --key af646ffd-7ad7-4df9-9a4a-449d4b00d70a",
+    "cy:run_record_with_dasboard-old-for-prod": "cypress run --record --key b4deb934-801d-4bb8-9da2-442e46f3736f",
     "cy:run:chrome": "cypress run --browser chrome",
     "cy:run:firefox": "cypress run --browser firefox"
   },
-  "author": "Alex",
+  "author": "Alex Alipoyo",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.3.1"
+    "cypress": "^8.5.0",
+    "@angular-devkit/build-angular": "^12.2.8",
+    "@angular/cli": "^12.2.8",
+    "@angular/compiler-cli": "^12.2.8",
+    "@angular/language-service": "^12.2.8",
+    "@nuintun/qrcode": "^3.0.1",
+    "@okta/okta-auth-js": "^5.5.0",
+    "angular": "^1.8.2",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-localstorage-commands": "^1.5.0",
+    "cypress-otp": "^1.0.3",
+    "cypress-real-events": "^1.5.1",
+    "cypress-wait-until": "^1.7.1",
+    "cypress-xpath": "^1.6.2",
+    "faker": "^5.5.3"
   },
   "dependencies": {
-    "husky": "^7.0.2"
+    "husky": "^7.0.2",
+    "cypress-get-table": "^1.0.1",
+    "i": "^0.3.7",
+    "ini": "^2.0.0",
+    "npm-registry-fetch": "^11.0.0",
+    "pdf-parse": "^1.1.1",
+    "postcss": "^8.3.9",
+    "serialize-javascript": "^6.0.0",
+    "sockjs": "^0.3.21",
+    "start-server-and-test": "^1.14.0",
+    "totp-generator": "0.0.10",
+    "webpack-subresource-integrity": "^5.0.0"
   },
   "eslintConfig": {
     "env": {

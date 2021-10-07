@@ -5,6 +5,9 @@ node_modules/
 debug.log
 
 # Config folder
+cypress/config/bsn/prod.json
+cypress/config/bsn/qa.json
+package.json
 
 # Download folder
 cypress/downloads/

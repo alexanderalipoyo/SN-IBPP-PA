@@ -5,9 +5,9 @@
     "passes": 32,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-02T13:40:22.331Z",
-    "end": "2021-11-02T13:46:11.702Z",
-    "duration": 173162,
+    "start": "2021-11-03T07:03:31.022Z",
+    "end": "2021-11-03T07:09:01.925Z",
+    "duration": 157604,
     "testsRegistered": 32,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "eea50829-77c9-402e-b4e1-212960d04348",
+      "uuid": "d24a0d7e-28f1-4cb6-94c9-c192c76797f3",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/manage-clients/client-management.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/manage-clients/client-management.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a8e2503f-a3c0-4d7f-ad96-73541b17da4c",
+          "uuid": "3e3bc9c6-01cb-47df-bd8d-55d61152b2cd",
           "title": "Client Management",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "Client Information Tab : Default items should visible",
               "fullTitle": "Client Management Client Information Tab : Default items should visible",
               "timedOut": null,
-              "duration": 11021,
+              "duration": 9707,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "890ed5fb-92e5-4f06-ad8c-56380f7b5cad",
-              "parentUUID": "a8e2503f-a3c0-4d7f-ad96-73541b17da4c",
+              "uuid": "b8177b4f-96b9-4a6d-9036-84142591bb10",
+              "parentUUID": "3e3bc9c6-01cb-47df-bd8d-55d61152b2cd",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Client Information Tab : Check texts/labels if visible",
               "fullTitle": "Client Management Client Information Tab : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 3844,
+              "duration": 3292,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "348dc8e9-d62e-4838-8dcb-30cbe60b35d2",
-              "parentUUID": "a8e2503f-a3c0-4d7f-ad96-73541b17da4c",
+              "uuid": "cb07dade-e0a4-42c0-88fe-057ea1732466",
+              "parentUUID": "3e3bc9c6-01cb-47df-bd8d-55d61152b2cd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "890ed5fb-92e5-4f06-ad8c-56380f7b5cad",
-            "348dc8e9-d62e-4838-8dcb-30cbe60b35d2"
+            "b8177b4f-96b9-4a6d-9036-84142591bb10",
+            "cb07dade-e0a4-42c0-88fe-057ea1732466"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 14865,
+          "duration": 12999,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -95,7 +95,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "0a47d938-b52f-47e3-b487-59dca0896a31",
+      "uuid": "4c58ed86-da1f-42dd-bbfe-4c20429b7c93",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/manage-clients/clients-list.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/manage-clients/clients-list.feature",
@@ -104,7 +104,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1cfa7a81-cf91-47c3-9ef6-cb4b78a29dec",
+          "uuid": "e80b5609-1d86-4b50-9c88-a181171e6605",
           "title": "Client Management",
           "fullFile": "",
           "file": "",
@@ -115,25 +115,7 @@
               "title": "Client List : Default items should visible",
               "fullTitle": "Client Management Client List : Default items should visible",
               "timedOut": null,
-              "duration": 10070,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "65f40300-368e-40c8-b385-09b406eedb2a",
-              "parentUUID": "1cfa7a81-cf91-47c3-9ef6-cb4b78a29dec",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Client List : Check texts/labels if visible",
-              "fullTitle": "Client Management Client List : Check texts/labels if visible",
-              "timedOut": null,
-              "duration": 5591,
+              "duration": 9677,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -142,21 +124,39 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "b0efac4a-39cc-4432-bc77-263898708273",
-              "parentUUID": "1cfa7a81-cf91-47c3-9ef6-cb4b78a29dec",
+              "uuid": "f698e6e8-4129-4875-83c1-946a0dbf7c76",
+              "parentUUID": "e80b5609-1d86-4b50-9c88-a181171e6605",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Client List : Check texts/labels if visible",
+              "fullTitle": "Client Management Client List : Check texts/labels if visible",
+              "timedOut": null,
+              "duration": 5399,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "9ba6646e-4a6a-4986-abf3-b44938c4c725",
+              "parentUUID": "e80b5609-1d86-4b50-9c88-a181171e6605",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "65f40300-368e-40c8-b385-09b406eedb2a",
-            "b0efac4a-39cc-4432-bc77-263898708273"
+            "f698e6e8-4129-4875-83c1-946a0dbf7c76",
+            "9ba6646e-4a6a-4986-abf3-b44938c4c725"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15661,
+          "duration": 15076,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -172,7 +172,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "275eeaf9-0ea4-4380-9cab-41fa9c61f6f5",
+      "uuid": "23b9f9c1-495f-4756-ad11-3775e09c3eee",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/my-dashboard/partner-dashboard.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/my-dashboard/partner-dashboard.feature",
@@ -181,7 +181,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+          "uuid": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
           "title": "PA My Dashboard",
           "fullFile": "",
           "file": "",
@@ -192,7 +192,7 @@
               "title": "Company Average Employee Secure Score (ESS) : Default items should visible",
               "fullTitle": "PA My Dashboard Company Average Employee Secure Score (ESS) : Default items should visible",
               "timedOut": null,
-              "duration": 26947,
+              "duration": 14881,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -201,8 +201,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "4cb9ec23-aa36-4c0f-a43d-cb610abccead",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "97599906-ebed-4b61-b295-c14d455a1126",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -210,7 +210,7 @@
               "title": "Company Average Employee Secure Score (ESS) : Check texts/labels if visible",
               "fullTitle": "PA My Dashboard Company Average Employee Secure Score (ESS) : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 1511,
+              "duration": 985,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -219,8 +219,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "ae021afe-e4b4-474a-95d6-de024130a712",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "577976d8-9bc1-4df0-bb8a-3f3b00e2900c",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -228,7 +228,7 @@
               "title": "Company Average ESS Trend : Default items should visible",
               "fullTitle": "PA My Dashboard Company Average ESS Trend : Default items should visible",
               "timedOut": null,
-              "duration": 3559,
+              "duration": 3019,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -237,8 +237,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "7642f828-6a49-4b3a-952a-1bb966bfcdc4",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "ba54f251-b710-4fc7-9189-12ea7c45a3eb",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -246,7 +246,7 @@
               "title": "Company Average ESS Trend : Check texts/labels if visible",
               "fullTitle": "PA My Dashboard Company Average ESS Trend : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 2292,
+              "duration": 1560,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -255,8 +255,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "03f9a7e3-237c-4ee4-a8e7-a151222287d8",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "300350b9-f659-414e-807e-c2d26df56ac0",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -264,7 +264,7 @@
               "title": "Improve your ESS : Default items should visible",
               "fullTitle": "PA My Dashboard Improve your ESS : Default items should visible",
               "timedOut": null,
-              "duration": 2092,
+              "duration": 1834,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -273,8 +273,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "54e86a8a-b60f-4b23-8f12-0a7f8e92380d",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "aeb2e29a-1336-4c60-830c-5339942fcb02",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -282,7 +282,7 @@
               "title": "Improve your ESS : Check texts/labels if visible",
               "fullTitle": "PA My Dashboard Improve your ESS : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 396,
+              "duration": 136,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -291,8 +291,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "841e8129-7836-4c3b-a65f-9ec4663916db",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "f593b4a9-236d-4c26-a3de-4c778e52ec4a",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -300,7 +300,7 @@
               "title": "External Data Breaches : Default items should visible",
               "fullTitle": "PA My Dashboard External Data Breaches : Default items should visible",
               "timedOut": null,
-              "duration": 1795,
+              "duration": 1803,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -309,8 +309,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "2bc28003-b2eb-4a0d-8b81-c0315878976b",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "24c33b3f-e331-48b5-931d-c868317ea251",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -318,7 +318,7 @@
               "title": "External Data Breaches : Check texts/labels if visible",
               "fullTitle": "PA My Dashboard External Data Breaches : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 461,
+              "duration": 1045,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -327,8 +327,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "b2671c36-a903-4bf3-89a2-3bb4c9ff1184",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "c0379cfc-1f39-47e0-845d-42a0635cbc9e",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -336,7 +336,7 @@
               "title": "Chart Bar : Default items should visible",
               "fullTitle": "PA My Dashboard Chart Bar : Default items should visible",
               "timedOut": null,
-              "duration": 1600,
+              "duration": 3167,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -345,8 +345,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "9e1fc5f0-fad3-4525-9732-98becb41eb4a",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "5e58b08d-dd27-4ddf-bd84-139a04bd168d",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -354,7 +354,7 @@
               "title": "Chart Bar : Check texts/labels if visible",
               "fullTitle": "PA My Dashboard Chart Bar : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 733,
+              "duration": 564,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -363,8 +363,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "bd1f6dbd-2391-4e90-ba2d-a0524401cd06",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "fc9680e2-5348-4023-9980-a407b0d7146a",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -372,7 +372,7 @@
               "title": "Leaderboard : Default items should visible",
               "fullTitle": "PA My Dashboard Leaderboard : Default items should visible",
               "timedOut": null,
-              "duration": 1574,
+              "duration": 2013,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -381,8 +381,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "dec80223-e621-44eb-b1ca-3084f068d692",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "5fb2793b-1fe6-4d58-87e4-f496595afd49",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             },
@@ -390,7 +390,7 @@
               "title": "Leaderboard : Check texts/labels if visible",
               "fullTitle": "PA My Dashboard Leaderboard : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 683,
+              "duration": 776,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -399,31 +399,31 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "580a52bf-4362-4a03-b90d-8ef8793160e2",
-              "parentUUID": "53c8f6b3-a0a9-460e-a5f3-29ddbafb8b1d",
+              "uuid": "3429915e-8dcd-4e9d-a343-792d43b144a3",
+              "parentUUID": "00ad0fd7-1b33-40b8-937e-0141e70ee33a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4cb9ec23-aa36-4c0f-a43d-cb610abccead",
-            "ae021afe-e4b4-474a-95d6-de024130a712",
-            "7642f828-6a49-4b3a-952a-1bb966bfcdc4",
-            "03f9a7e3-237c-4ee4-a8e7-a151222287d8",
-            "54e86a8a-b60f-4b23-8f12-0a7f8e92380d",
-            "841e8129-7836-4c3b-a65f-9ec4663916db",
-            "2bc28003-b2eb-4a0d-8b81-c0315878976b",
-            "b2671c36-a903-4bf3-89a2-3bb4c9ff1184",
-            "9e1fc5f0-fad3-4525-9732-98becb41eb4a",
-            "bd1f6dbd-2391-4e90-ba2d-a0524401cd06",
-            "dec80223-e621-44eb-b1ca-3084f068d692",
-            "580a52bf-4362-4a03-b90d-8ef8793160e2"
+            "97599906-ebed-4b61-b295-c14d455a1126",
+            "577976d8-9bc1-4df0-bb8a-3f3b00e2900c",
+            "ba54f251-b710-4fc7-9189-12ea7c45a3eb",
+            "300350b9-f659-414e-807e-c2d26df56ac0",
+            "aeb2e29a-1336-4c60-830c-5339942fcb02",
+            "f593b4a9-236d-4c26-a3de-4c778e52ec4a",
+            "24c33b3f-e331-48b5-931d-c868317ea251",
+            "c0379cfc-1f39-47e0-845d-42a0635cbc9e",
+            "5e58b08d-dd27-4ddf-bd84-139a04bd168d",
+            "fc9680e2-5348-4023-9980-a407b0d7146a",
+            "5fb2793b-1fe6-4d58-87e4-f496595afd49",
+            "3429915e-8dcd-4e9d-a343-792d43b144a3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 43643,
+          "duration": 31783,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -439,7 +439,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "0cfba4be-fa3e-4f9f-8f5b-9ad10890602f",
+      "uuid": "683be311-11db-4fcc-8036-b1b4c3de2f50",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/partner-profile/billing-report.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/partner-profile/billing-report.feature",
@@ -448,7 +448,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "15a3cbcd-df26-4bdf-a810-a16604629fba",
+          "uuid": "931d889f-57b6-43aa-ab1a-e80c57fbfa27",
           "title": "PA Billing Report",
           "fullFile": "",
           "file": "",
@@ -459,7 +459,7 @@
               "title": "PA Billing Report : Default items should visible",
               "fullTitle": "PA Billing Report PA Billing Report : Default items should visible",
               "timedOut": null,
-              "duration": 8926,
+              "duration": 9773,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -468,8 +468,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "5e7a76df-ee57-4c24-9788-68e77723a920",
-              "parentUUID": "15a3cbcd-df26-4bdf-a810-a16604629fba",
+              "uuid": "630fae4f-6fff-49c7-afd2-1a95cacf1dd6",
+              "parentUUID": "931d889f-57b6-43aa-ab1a-e80c57fbfa27",
               "isHook": false,
               "skipped": false
             },
@@ -477,7 +477,7 @@
               "title": "PA Billing Report : Check texts/labels if visible",
               "fullTitle": "PA Billing Report PA Billing Report : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 91,
+              "duration": 79,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -486,21 +486,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "3194ca56-84c1-4a22-8383-63ed87411ff8",
-              "parentUUID": "15a3cbcd-df26-4bdf-a810-a16604629fba",
+              "uuid": "d2c8629a-8ce6-4718-8114-bb69ca42d981",
+              "parentUUID": "931d889f-57b6-43aa-ab1a-e80c57fbfa27",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5e7a76df-ee57-4c24-9788-68e77723a920",
-            "3194ca56-84c1-4a22-8383-63ed87411ff8"
+            "630fae4f-6fff-49c7-afd2-1a95cacf1dd6",
+            "d2c8629a-8ce6-4718-8114-bb69ca42d981"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9017,
+          "duration": 9852,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -516,7 +516,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "56abc810-cf4a-4c41-9839-169ba9334525",
+      "uuid": "2496d768-d41c-49ef-923d-dd657a72e40c",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/partner-profile/custom-profile.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/partner-profile/custom-profile.feature",
@@ -525,7 +525,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2d7802dc-ef92-4e1b-8e71-61a71e2f3d07",
+          "uuid": "68b7c7fb-26e5-48a3-8634-a4c8cb318ca6",
           "title": "PA Custom Profile",
           "fullFile": "",
           "file": "",
@@ -536,7 +536,7 @@
               "title": "PA Custom Profile : Default items should visible",
               "fullTitle": "PA Custom Profile PA Custom Profile : Default items should visible",
               "timedOut": null,
-              "duration": 15017,
+              "duration": 18064,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -545,8 +545,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "52639a5e-e087-41e4-b82f-773751d708ec",
-              "parentUUID": "2d7802dc-ef92-4e1b-8e71-61a71e2f3d07",
+              "uuid": "39d74767-0626-4d54-9c42-80ca5682c1ac",
+              "parentUUID": "68b7c7fb-26e5-48a3-8634-a4c8cb318ca6",
               "isHook": false,
               "skipped": false
             },
@@ -554,7 +554,7 @@
               "title": "PA Custom Profile : Check texts/labels if visible",
               "fullTitle": "PA Custom Profile PA Custom Profile : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 1038,
+              "duration": 1009,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -563,21 +563,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "eac95c01-591b-437f-a25d-75b6165de97d",
-              "parentUUID": "2d7802dc-ef92-4e1b-8e71-61a71e2f3d07",
+              "uuid": "362cf77d-9e2c-4214-b271-0da5df8f8e05",
+              "parentUUID": "68b7c7fb-26e5-48a3-8634-a4c8cb318ca6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "52639a5e-e087-41e4-b82f-773751d708ec",
-            "eac95c01-591b-437f-a25d-75b6165de97d"
+            "39d74767-0626-4d54-9c42-80ca5682c1ac",
+            "362cf77d-9e2c-4214-b271-0da5df8f8e05"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 16055,
+          "duration": 19073,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -593,7 +593,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "f2a5a3a1-9d02-464c-9033-1ca41254b532",
+      "uuid": "1425a680-0a3d-453e-9a74-8b1d21fe366a",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/partner-profile/partner-information.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/partner-profile/partner-information.feature",
@@ -602,7 +602,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "752d415e-729f-4ffe-8527-063b4929251d",
+          "uuid": "c33d251c-5da1-4b83-8fb8-c8e86084ea95",
           "title": "PA Information",
           "fullFile": "",
           "file": "",
@@ -613,7 +613,7 @@
               "title": "PA Information Tab : Default items should visible",
               "fullTitle": "PA Information PA Information Tab : Default items should visible",
               "timedOut": null,
-              "duration": 9376,
+              "duration": 8715,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -622,8 +622,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "4c455779-5c69-4b43-bdd1-1efff53b99b0",
-              "parentUUID": "752d415e-729f-4ffe-8527-063b4929251d",
+              "uuid": "be208dc2-312a-499d-b2dc-59e86820e789",
+              "parentUUID": "c33d251c-5da1-4b83-8fb8-c8e86084ea95",
               "isHook": false,
               "skipped": false
             },
@@ -631,7 +631,7 @@
               "title": "PA Information Tab : Check texts/labels if visible",
               "fullTitle": "PA Information PA Information Tab : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 1288,
+              "duration": 1030,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -640,21 +640,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "d18f37e0-5ace-412b-94d9-b0deec4aaeb7",
-              "parentUUID": "752d415e-729f-4ffe-8527-063b4929251d",
+              "uuid": "5da39590-c762-4753-ba36-91b6fabbc0d9",
+              "parentUUID": "c33d251c-5da1-4b83-8fb8-c8e86084ea95",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4c455779-5c69-4b43-bdd1-1efff53b99b0",
-            "d18f37e0-5ace-412b-94d9-b0deec4aaeb7"
+            "be208dc2-312a-499d-b2dc-59e86820e789",
+            "5da39590-c762-4753-ba36-91b6fabbc0d9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10664,
+          "duration": 9745,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -670,7 +670,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "9078d836-0c92-4e68-bd07-d885e0416b7d",
+      "uuid": "ea954b40-73eb-4fb8-94c4-e1f4b8c7be15",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/partner-profile/payment-information.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/partner-profile/payment-information.feature",
@@ -679,7 +679,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "de7d2407-2645-408f-b2ae-40f4902c5171",
+          "uuid": "0cbce7ce-e267-4b99-8af8-2cca33ebe905",
           "title": "PA Payment Information",
           "fullFile": "",
           "file": "",
@@ -690,7 +690,7 @@
               "title": "PA Payment information : Default items should visible",
               "fullTitle": "PA Payment Information PA Payment information : Default items should visible",
               "timedOut": null,
-              "duration": 15017,
+              "duration": 13777,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -699,8 +699,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "aabe1628-f2b6-4685-95f2-259dacf8cc24",
-              "parentUUID": "de7d2407-2645-408f-b2ae-40f4902c5171",
+              "uuid": "097760ff-7d1d-4e7e-814f-b02b1c264760",
+              "parentUUID": "0cbce7ce-e267-4b99-8af8-2cca33ebe905",
               "isHook": false,
               "skipped": false
             },
@@ -708,7 +708,7 @@
               "title": "PA Payment information : Check texts/labels if visible",
               "fullTitle": "PA Payment Information PA Payment information : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 327,
+              "duration": 210,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -717,21 +717,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "a118b02c-2fa7-488b-9ce5-d7a4095711c6",
-              "parentUUID": "de7d2407-2645-408f-b2ae-40f4902c5171",
+              "uuid": "6e2a4c79-5e28-4706-a289-b1ebbf12b6f5",
+              "parentUUID": "0cbce7ce-e267-4b99-8af8-2cca33ebe905",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "aabe1628-f2b6-4685-95f2-259dacf8cc24",
-            "a118b02c-2fa7-488b-9ce5-d7a4095711c6"
+            "097760ff-7d1d-4e7e-814f-b02b1c264760",
+            "6e2a4c79-5e28-4706-a289-b1ebbf12b6f5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15344,
+          "duration": 13987,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -747,7 +747,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "71806fd9-a2bb-4ea8-96f1-b73e50ed3e26",
+      "uuid": "de78adcd-4e54-412a-ba67-bea2e9c194b1",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/partner-profile/push-notification.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/partner-profile/push-notification.feature",
@@ -756,7 +756,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "37ab904e-83e2-41d6-9f83-3c1327938911",
+          "uuid": "93528ac1-ec0f-4919-8bd7-5554eda758f0",
           "title": "PA Push Notification",
           "fullFile": "",
           "file": "",
@@ -767,7 +767,7 @@
               "title": "PA Push Notification : Default items should visible",
               "fullTitle": "PA Push Notification PA Push Notification : Default items should visible",
               "timedOut": null,
-              "duration": 15372,
+              "duration": 15675,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -776,8 +776,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "c9df485a-2df1-4735-88eb-b54f1740bad4",
-              "parentUUID": "37ab904e-83e2-41d6-9f83-3c1327938911",
+              "uuid": "c276f649-fac8-4779-aad3-afca1b76f8db",
+              "parentUUID": "93528ac1-ec0f-4919-8bd7-5554eda758f0",
               "isHook": false,
               "skipped": false
             },
@@ -785,7 +785,7 @@
               "title": "PA Push Notification : Check texts/labels if visible",
               "fullTitle": "PA Push Notification PA Push Notification : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 5519,
+              "duration": 5861,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -794,21 +794,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "52626afd-4f11-439c-8e94-91411eb4ddd0",
-              "parentUUID": "37ab904e-83e2-41d6-9f83-3c1327938911",
+              "uuid": "62652932-2d9c-4207-86d6-e2570ff75e82",
+              "parentUUID": "93528ac1-ec0f-4919-8bd7-5554eda758f0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c9df485a-2df1-4735-88eb-b54f1740bad4",
-            "52626afd-4f11-439c-8e94-91411eb4ddd0"
+            "c276f649-fac8-4779-aad3-afca1b76f8db",
+            "62652932-2d9c-4207-86d6-e2570ff75e82"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 20891,
+          "duration": 21536,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -824,7 +824,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "dcd9358a-061a-440a-a6e7-f66969ca539b",
+      "uuid": "5f8a983a-55b1-4a4e-af42-ecc632ca7dc8",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/partner-profile/tms-config.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/partner-profile/tms-config.feature",
@@ -833,7 +833,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "12b8b3ae-1d58-4937-888f-79e27c81c736",
+          "uuid": "198a17b4-5b23-492c-b485-56d3a4f17798",
           "title": "PA TMS Configuration",
           "fullFile": "",
           "file": "",
@@ -844,7 +844,7 @@
               "title": "PA TMS Configuration : Default items should visible",
               "fullTitle": "PA TMS Configuration PA TMS Configuration : Default items should visible",
               "timedOut": null,
-              "duration": 14659,
+              "duration": 11583,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -853,8 +853,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "661f9371-8009-4600-a249-3c45dd9e311a",
-              "parentUUID": "12b8b3ae-1d58-4937-888f-79e27c81c736",
+              "uuid": "1d9585bb-218a-4d46-b052-65405df64c00",
+              "parentUUID": "198a17b4-5b23-492c-b485-56d3a4f17798",
               "isHook": false,
               "skipped": false
             },
@@ -862,7 +862,7 @@
               "title": "PA TMS Configuration : Check texts/labels if visible",
               "fullTitle": "PA TMS Configuration PA TMS Configuration : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 302,
+              "duration": 380,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -871,21 +871,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "4df24f54-7325-43f3-8562-81e07dac154f",
-              "parentUUID": "12b8b3ae-1d58-4937-888f-79e27c81c736",
+              "uuid": "5ac1b66d-bd8b-4a14-b7cf-04ef8e51a8d6",
+              "parentUUID": "198a17b4-5b23-492c-b485-56d3a4f17798",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "661f9371-8009-4600-a249-3c45dd9e311a",
-            "4df24f54-7325-43f3-8562-81e07dac154f"
+            "1d9585bb-218a-4d46-b052-65405df64c00",
+            "5ac1b66d-bd8b-4a14-b7cf-04ef8e51a8d6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 14961,
+          "duration": 11963,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -901,7 +901,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "7426d65e-1f43-4d2f-8c5b-8942bb1d42d8",
+      "uuid": "02bdcc27-1521-406a-b1cf-f834a4761c65",
       "title": "",
       "fullFile": "cypress/integration/internal-bpp/partner-admin/general.feature",
       "file": "cypress/integration/internal-bpp/partner-admin/general.feature",
@@ -910,7 +910,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d6b50c2a-3b51-4c8c-8127-fcdf404b6398",
+          "uuid": "48e28885-ddb2-43df-a67b-fe9a6928e1b0",
           "title": "General",
           "fullFile": "",
           "file": "",
@@ -921,7 +921,7 @@
               "title": "Side Bar Menu : Default items should visible",
               "fullTitle": "General Side Bar Menu : Default items should visible",
               "timedOut": null,
-              "duration": 8348,
+              "duration": 8116,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -930,8 +930,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "53b11356-4484-4a8b-9236-d158f5ac0a13",
-              "parentUUID": "d6b50c2a-3b51-4c8c-8127-fcdf404b6398",
+              "uuid": "7ba0fb30-0c75-4ae1-98e6-ec795d1d5c3f",
+              "parentUUID": "48e28885-ddb2-43df-a67b-fe9a6928e1b0",
               "isHook": false,
               "skipped": false
             },
@@ -939,7 +939,7 @@
               "title": "Side Bar Menu : Check texts/labels if visible",
               "fullTitle": "General Side Bar Menu : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 101,
+              "duration": 103,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -948,8 +948,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "5575c7fb-03d6-48e9-9eba-ea9de92c49de",
-              "parentUUID": "d6b50c2a-3b51-4c8c-8127-fcdf404b6398",
+              "uuid": "36820b0d-3a9f-4e9d-9e3e-01bba7ae13a8",
+              "parentUUID": "48e28885-ddb2-43df-a67b-fe9a6928e1b0",
               "isHook": false,
               "skipped": false
             },
@@ -957,7 +957,7 @@
               "title": "My Profile : Default items and fields should visible",
               "fullTitle": "General My Profile : Default items and fields should visible",
               "timedOut": null,
-              "duration": 3035,
+              "duration": 2812,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -966,8 +966,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "d87c372e-709c-4413-90d2-570de7c29e39",
-              "parentUUID": "d6b50c2a-3b51-4c8c-8127-fcdf404b6398",
+              "uuid": "e6299e0d-cb40-4f8f-a63a-924753626c8d",
+              "parentUUID": "48e28885-ddb2-43df-a67b-fe9a6928e1b0",
               "isHook": false,
               "skipped": false
             },
@@ -975,7 +975,7 @@
               "title": "My Profile : Check texts/labels if visible",
               "fullTitle": "General My Profile : Check texts/labels if visible",
               "timedOut": null,
-              "duration": 577,
+              "duration": 559,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -984,23 +984,23 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "d1103534-6ef2-4701-86e7-d1aba62e3736",
-              "parentUUID": "d6b50c2a-3b51-4c8c-8127-fcdf404b6398",
+              "uuid": "2c8ca802-af02-43f2-a961-fc7d91c3df9f",
+              "parentUUID": "48e28885-ddb2-43df-a67b-fe9a6928e1b0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "53b11356-4484-4a8b-9236-d158f5ac0a13",
-            "5575c7fb-03d6-48e9-9eba-ea9de92c49de",
-            "d87c372e-709c-4413-90d2-570de7c29e39",
-            "d1103534-6ef2-4701-86e7-d1aba62e3736"
+            "7ba0fb30-0c75-4ae1-98e6-ec795d1d5c3f",
+            "36820b0d-3a9f-4e9d-9e3e-01bba7ae13a8",
+            "e6299e0d-cb40-4f8f-a63a-924753626c8d",
+            "2c8ca802-af02-43f2-a961-fc7d91c3df9f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12061,
+          "duration": 11590,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
